@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Contacts from './components/Contacts.vue';
+import ContactList from './components/ContactList.vue';
 
   </script>
 
 <template>
   <header>
-    <Contacts />
+    <ContactList />
   </header>
 
   <!-- <RouterView /> -->

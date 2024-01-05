@@ -25,15 +25,14 @@ onMounted(async() => {
   <!-- <input v-model="header" /> -->
   <!-- * v-model provides 2 way data binding for reactive references -->
   <ul>
-    <li v-for="user in users" :key="user.id">
+    <li v-for="{name, username, id, email, phone, website} in users" :key="id" >
       <img src="https://robohash.org/1" alt="robo" />
       <div class="credentials">
-        <div>Name: {{ user["name"] }}</div>
-        <div>Username: {{ user["username"] }}</div>
-        <div>Email: {{ user["email"] }}</div>
-        <div>Phone: {{ user["phone"] }}</div>
-        <div>website: {{ user["website"] }}</div>
-
+        <div>Name: {{ name }}</div>
+        <div>Username: {{ username }}</div>
+        <div>Email: {{ email }}</div>
+        <div>Phone: {{ phone }}</div>
+        <div>website: {{ website }}</div>
       </div>
     </li>
   </ul> 
